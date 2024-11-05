@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+
+{% block title %}
+<title>Social-{{title}}</title>
+{% endblock %}
+
+{% block content %}
+<h1>{{title}} Page</h1>
+
+<form action="" method="post">
+    {{userform.as_p}}
+    {{forms.as_p}}
+    
+    <input type="submit" value="{{title}}">
+</form>
+{% endblock %}
